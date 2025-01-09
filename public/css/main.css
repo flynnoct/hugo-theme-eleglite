@@ -2,7 +2,7 @@
   --ambient-color: #47717A;
   --background-color: #E9E9E9;
   --text-color: #222;
-  --inline-code-background-color: #f8f8f8;
+  /* --inline-code-background-color: #f0f0f0; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,7 +10,7 @@
     --ambient-color: #57A3AC;
     --background-color: #1a1a1a;
     --text-color: #E9E9E9;
-    --inline-code-background-color: #2e3440;
+    /* --inline-code-background-color: #333; */
   }
 }
 
@@ -104,21 +104,11 @@
   background-color: var(--ambient-color);
 }
 
-/* 修改代码块样式 */
 .highlight pre {
   border-radius: 4px;
   padding: 0 1rem;
   overflow-x: auto;
   margin: 1.5rem 0;
-}
-
-/* inline code  */
-:not(pre) > code {
-  background-color: var(--inline-code-background-color);
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-size: 0.9em;
-  font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 }
 
 .page-content code {
