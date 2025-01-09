@@ -57,6 +57,8 @@
   max-width: 768px;
   margin: 0 auto;
   padding: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .page-tags {
