@@ -1,0 +1,7 @@
+<nav style="font-size: 0.8rem; letter-spacing: 0.02em;">
+    <span style="font-size: 1.5em; padding: 0 0.1em; vertical-align: -2px;">·</span>
+    {{- $len := len .Site.Menus.main -}}
+    {{- range $index, $element := .Site.Menus.main -}}
+        <a href="{{ .URL }}">{{ .Name | upper }}</a><span style="font-size: 1.5em; padding: 0 0.1em; vertical-align: -2px;">·</span>
+    {{- end -}}
+</nav>

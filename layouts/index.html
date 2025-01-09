@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="base-container">
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="index-title">
+            <h1 style="text-transform: uppercase; letter-spacing: 0.05em;">{{ site.Title }}</h1>
+          </div>
+          <p class="index-content">
+            {{ .Content }}
+          </p>
+          {{ partial "nav.html" . }}
+        </div>
+      </section>
+
+      <section class="posts-section">
+        {{ range first 10 (sort site.RegularPages "Date" "desc") }}
+        <h2 style="margin-bottom: 0.3em; margin-top: 1.7em;"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ .Summary }}
+        {{ end }}
+        
+        <h2><a href="/posts">more...</a></h2>
+
+      </section>
+    </main>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
+
+  <script>
+    function setHeroHeight() {
+      const vh = window.innerHeight;
+      document.querySelector('.hero-section').style.height = vh + 'px';
+    }
+    
+    window.addEventListener('load', setHeroHeight);
+    window.addEventListener('resize', setHeroHeight);
+  </script>
+</body>
+
+</html>

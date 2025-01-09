@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Eleglite'
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 10
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 20
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

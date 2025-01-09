@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{ if .Data.Singular }}
+    {{ if .Data.Term }}
+      <!-- tag detail -->
+      <h1>Posts tagged #{{ .Data.Term }}</h1>
+      <ul>
+        {{ range .Pages.ByDate.Reverse }}
+          <li>
+            <a class="post-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <!-- tags list -->
+      <h1>Tags</h1>
+      <ul class="tags-list">
+        {{ range .Pages.ByTitle }}
+          <li>
+            <a class="tag-link" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ else }}
+    {{ $pages := .Pages.GroupByDate "2006" }}
+    {{ range $pages }}
+      <!-- posts -->
+      <h1>{{ .Key }}</h1>
+      <ul>
+        {{ range .Pages.ByPublishDate.Reverse }}
+          <li>
+            <a class="post-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+{{ end }}
