@@ -1,6 +1,6 @@
 :root {
   --ambient-color: #47717A;
-  --background-color: #E9E9E9;
+  --background-color: #F0F0F0;
   --text-color: #222;
   --inline-code-background-color: #f8f8f8;
 }
@@ -9,7 +9,7 @@
   :root {
     --ambient-color: #57A3AC;
     --background-color: #1a1a1a;
-    --text-color: #E9E9E9;
+    --text-color: #F0F0F0;
     --inline-code-background-color: #2e3440;
   }
 }
