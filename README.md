@@ -2,7 +2,7 @@
 
 ![Screenshot](https://raw.githubusercontent.com/flynnoct/hugo-theme-eleglite/7da37524f5f03aee254d9a03e54d02594e9e8504/images/screenshot.png)
 
-Eleglite is a Hugo theme crafted to bring back the simplicity and distraction-free style of the Web 1.0 era. Its design philosophy is minimal yet elegant, offering a clean and refined look for modern websites.
+Eleglite (Elegant + Lite) is a Hugo theme crafted to bring back the simplicity and distraction-free style of the Web 1.0 era. Its design philosophy is minimal yet elegant, offering a clean and refined look for modern websites.
 
 As my very first front-end project, Eleglite holds a special place in my heart. I drew significant inspiration from the design of [Neverland](https://type.cyhsu.xyz), which greatly influenced the aesthetic and functionality of this theme.
 
