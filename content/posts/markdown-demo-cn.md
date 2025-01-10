@@ -1,7 +1,7 @@
 ---
 title: "Hugo Markdown 中文演示"
 date: 2025-01-09T10:00:00Z
-draft = true
+draft: true
 tags: ["demo", "markdown"]
 summary: "全面指南，展示在 Hugo 中使用 Markdown 语法和格式化功能，包括文本格式化、列表、代码高亮等基础和高级功能。"
 ---

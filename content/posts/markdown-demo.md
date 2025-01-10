@@ -1,7 +1,7 @@
 ---
 title: "Hugo Markdown Demo"
 date: 2025-01-09T10:00:00Z
-draft = true
+draft: true
 tags: ["demo", "markdown"]
 summary: "A comprehensive guide demonstrating Markdown syntax and formatting capabilities in Hugo, including basic and advanced features like text formatting, lists, code highlighting, and more."
 ---
