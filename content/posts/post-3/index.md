@@ -1,7 +1,7 @@
 +++
 title = 'Post 3'
 date = 2024-03-15T11:00:00-07:00
-draft = false
+draft = true
 tags = ['red','green','blue']
 +++
 
