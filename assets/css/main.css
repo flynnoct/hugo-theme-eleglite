@@ -46,7 +46,7 @@
   font-size: 0.9rem;
 }
 
-.page-meta-container {
+.page-metada ta {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,7 +232,7 @@ ol li::marker {
       align-items: flex-start;
   }
 
-  .page-meta-container {
+  .page-metadata {
     flex-direction: column;
     align-items: flex-start;
   }
