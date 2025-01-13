@@ -34,3 +34,36 @@ Demo of the configuration:
   _merge = 'shallow'
 ```
 
+### Favicons
+
+To customize the favicons, replace the existing files in site's `static` directory with your own. Eleglite supports a simple single `favicon.ico` file, but you can also configure a set of favicon files in different sizes to better adapt to a wider range of browsers and devices.
+
+If you prefer to use the simple mode with a single `favicon.ico`:
+
+- Place the `favicon.ico` file in the site’s `static` directory.
+- Add the following code to the site configuration file `hugo.toml`:
+
+```toml
+[params]
+  useRichFavicon = false
+```
+
+If you want to use a set of favicon files in different sizes:
+  
+- Refer to the sample files in the `themes/Eleglite/static` directory to prepare a set of favicon files in different sizes, name them according to the sample files, and place them in the site’s `static` directory.
+- Copy the `themes/Eleglite/static/manifest.webmanifest` file to the site’s `static` directory.
+- Add the following code to the site configuration file `hugo.toml`:
+
+```toml
+[params]
+  useRichFavicon = true
+```
+
+Note: The complete list of favicon files and their dimensions is as follows:
+
+- favicon.ico
+- favicon.svg
+- favicon-96x96.png 96x96
+- apple-touch-icon.png 180x180
+- web-app-manifest-192x192.png 192x192
+- web-app-manifest-512x512.png 512x512
