@@ -1,12 +1,14 @@
 :root {
+  /* You can set LIGHT color scheme in this section */
   --ambient-color: #47717A;
   --background-color: #F0F0F0;
-  --text-color: #222;
+  --text-color: #222222;
   --inline-code-background-color: #f8f8f8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* You can set DARK color scheme in this section */
     --ambient-color: #57A3AC;
     --background-color: #1a1a1a;
     --text-color: #F0F0F0;
@@ -104,7 +106,6 @@
   background-color: var(--ambient-color);
 }
 
-/* 修改代码块样式 */
 .highlight pre {
   border-radius: 4px;
   padding: 0 1rem;
