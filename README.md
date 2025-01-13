@@ -25,20 +25,12 @@ As my very first front-end project, Eleglite holds a special place in my heart. 
 
 ## Configuration
 
-Due to limitations in Hugo, you need to add the following configuration to your `hugo.toml` file to enable syntax highlighting style:
+Set `_merge` to `true` under the `[markup]` section in the `hugo.toml` file to apply the theme’s configuration file to the entire site. Refer to the [official guide](https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes) for details. The specific configuration items can be found in the `themes/Eleglite/hugo.toml` file.
+
+Demo of the configuration:
 
 ```toml
 [markup]
-  [markup.highlight]
-    noClasses = false
+  _merge = 'shallow'
 ```
 
-To use HTML syntax in Markdown to insert images for better style control (e.g., centering, resizing), add the following settings under the `[markup]` section in the `hugo.toml` configuration file:
-
-```toml
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = true
-```
-**Note**: If multiple settings for `[markup]` are enabled in the configuration file, combine them under the same `[markup]` section.
