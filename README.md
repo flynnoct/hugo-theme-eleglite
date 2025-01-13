@@ -17,13 +17,34 @@ As my very first front-end project, Eleglite holds a special place in my heart. 
 
 ## Installation
 
-1. Download the zip file from the [GitHub repository](https://github.com/flynnoct/hugo-theme-eleglite/archive/refs/heads/main.zip)
+### Via Git (Recommended)
+
+1. Navigate to the theme directory of your Hugo site `cd themes`
+2. Add the theme as a submodule `git submodule add git@github.com:flynnoct/hugo-theme-eleglite.git Eleglite`
+3. Add `theme = "Eleglite"` to your `hugo.toml` file
+4. Enjoy! 🥳
+
+The Eleglite theme installed using this method can be updated to the latest version later by running the `git submodule update --remote`.
+
+### Via Downloading ZIP File
+
+1. Download the [latest zip file](https://github.com/flynnoct/hugo-theme-eleglite/archive/refs/heads/main.zip)
 2. Unzip the file and rename the folder to `Eleglite`
 3. Move the folder to the `themes` directory of your Hugo site
-4. Add `theme = "Eleglite"` to your `config.toml` file
-5. Enjoy the theme! 🥳
+4. Add `theme = "Eleglite"` to your `hugo.toml` file
+5. Enjoy! 🥳
+
+The Eleglite theme installed using this method can only be updated by manually downloading the latest version of the ZIP file.
 
 ## Configuration
+
+If you installed the theme via Git mentioned above, please note that all customizations you configure in this section (including but not limited to modifications to configuration files, template files, and CSS) must be made in the corresponding directories at the site level. In other words, you do not need to modify any files under `themes/Eleglite`. Although installing the theme via downloading ZIP file avoids the risk of losing configurations due to theme updates, I still recommend following these guidelines for better site management. The reasons for this are as follows:
+
+
+- When the Eleglite theme is updated, Git will automatically merge the latest code for you. Any modifications you made to files under `themes/Eleglite` will be overwritten, which may result in the loss of your site configuration.
+- Hugo is designed such that configurations or content at the site level take precedence over those at the theme level. Hugo only reads configurations or content at the theme level if they are not present at the site level. Therefore, you can copy files from `themes/Eleglite` to the corresponding directories at the site level to override or modify the theme’s default configurations or content. This approach makes it easier to manage your site or switch to another theme (but since Eleglite is so beautiful, you probably won’t want to switch themes 🤪).
+
+### Basic Configuration
 
 Set `_merge` to `true` under the `[markup]` section in the `hugo.toml` file to apply the theme’s configuration file to the entire site. Refer to the [official guide](https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes) for details. The specific configuration items can be found in the `themes/Eleglite/hugo.toml` file.
 
