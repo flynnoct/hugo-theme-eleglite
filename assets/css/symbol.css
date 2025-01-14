@@ -10,7 +10,7 @@
 
 .scroll-down-arrow {
   position: absolute;
-  bottom: 5px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2em;
