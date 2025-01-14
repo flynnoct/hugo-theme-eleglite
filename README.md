@@ -19,10 +19,9 @@ As my very first front-end project, Eleglite holds a special place in my heart. 
 
 ### Via Git (Recommended)
 
-1. Navigate to the theme directory of your Hugo site `cd themes`
-2. Add the theme as a submodule `git submodule add git@github.com:flynnoct/hugo-theme-eleglite.git Eleglite`
-3. Add `theme = "Eleglite"` to your `hugo.toml` file
-4. Enjoy! 🥳
+1. Add the theme as a submodule `git submodule add git@github.com:flynnoct/hugo-theme-eleglite.git themes/Eleglite`
+2. Add `theme = "Eleglite"` to your `hugo.toml` file
+3. Enjoy! 🥳
 
 The Eleglite theme installed using this method can be updated to the latest version later by running the `git submodule update --remote`.
 
