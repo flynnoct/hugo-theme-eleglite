@@ -10,6 +10,7 @@
 
 .scroll-down-arrow {
   position: absolute;
+  cursor: pointer;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);

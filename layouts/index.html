@@ -48,9 +48,15 @@
       const vh = window.innerHeight;
       document.querySelector('.hero-section').style.height = vh + 'px';
     }
-    
+
+    function scrollToPostsSection() {
+      const postsSection = document.querySelector('.posts-section');
+      postsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
     window.addEventListener('load', setHeroHeight);
     window.addEventListener('resize', setHeroHeight);
+    document.querySelector('.scroll-down-arrow').addEventListener('click', scrollToPostsSection);
   </script>
 </body>
 
