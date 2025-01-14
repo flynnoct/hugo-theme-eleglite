@@ -1,18 +1,18 @@
 :root {
   /* You can set LIGHT color scheme in this section */
   --ambient-color: #47717A;
-  --background-color: #F0F0F0;
-  --text-color: #222222;
-  --inline-code-background-color: #f8f8f8;
+  --background-color: #F4F4F4;
+  --text-color: #2C2C2C;
+  --inline-code-background-color: #F8F8F8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* You can set DARK color scheme in this section */
-    --ambient-color: #57A3AC;
-    --background-color: #1a1a1a;
+    --ambient-color: #78C2C4;
+    --background-color: #1A1A1A;
     --text-color: #F0F0F0;
-    --inline-code-background-color: #2e3440;
+    --inline-code-background-color: #2E3440;
   }
 }
 
