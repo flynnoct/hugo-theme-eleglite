@@ -7,7 +7,7 @@ description = 'A minimal yet elegant theme for Hugo.'
 homepage = 'https://github.com/flynnoct/hugo-theme-eleglite'
 
 # If you have a running demo of the theme
-demosite = 'https://blog.flynnoct.com'
+demosite = 'https://eleglite.flynnoct.com'
 
 # Taxonomy terms
 tags = ['blog', 'minimal', 'light', 'dark', 'english', 'chinese']
