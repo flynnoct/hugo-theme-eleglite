@@ -13,15 +13,9 @@ As my very first front-end project, Eleglite holds a special place in my heart. 
 
 For syntax highlighting, Eleglite employs the [Tango](https://xyproto.github.io/splash/docs/tango.html) scheme in light mode and the [Nord](https://xyproto.github.io/splash/docs/nord.html) scheme in dark mode. This thoughtful integration ensures a visually pleasing coding experience in both modes.
 
-If you enjoy using Eleglite, I would greatly appreciate your support by giving it a star on [GitHub](https://github.com/flynnoct/hugo-theme-eleglite). Your encouragement means a lot!
+This is the demo page for Eleglite. Feel free to explore and appreciate its design style. **If you like it, visit [GitHub](https://github.com/flynnoct/hugo-theme-eleglite) for installation and configuration instructions, and don’t forget to give it a star. 🌟**
 
-**Note:** Due to limitations in Hugo, you need to add the following configuration to your `hugo.toml` file to enable syntax highlighting:
-
-```text
-[markup]
-  [markup.highlight]
-    noClasses = false
-```
+Enjoy!
 
 ## 中文版本
 
@@ -31,13 +25,6 @@ Eleglite 是一个 Hugo 主题，旨在重新找回 Web 1.0 时代的简约与�
 
 在语法高亮方面，Eleglite 在浅色模式下使用了 [Tango](https://xyproto.github.io/splash/docs/tango.html) 配色方案，在深色模式下使用了 [Nord](https://xyproto.github.io/splash/docs/nord.html) 配色方案。这种精心的集成保证了两种模式下令人愉悦的代码显示效果。
 
-如果你喜欢使用 Eleglite，非常欢迎到 [GitHub](https://github.com/flynnoct/hugo-theme-eleglite) 上给它点个星。你的支持对我来说意义重大！
+这里是Eleglite的示例页面，你可以随意浏览以欣赏其设计风格。**如果喜欢，可前往[GitHub](https://github.com/flynnoct/hugo-theme-eleglite)查看安装和配置说明，同时别忘了给它点个星哦。🌟**
 
-**注意：** 由于 Hugo 的限制，你需要在 `hugo.toml` 文件中添加以下配置，以启用语法高亮：
-
-```text
-[markup]
-  [markup.highlight]
-    noClasses = false
-```
-
+祝你使用愉快!
